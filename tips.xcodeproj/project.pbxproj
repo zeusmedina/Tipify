@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CED2F3411C1DFB0C00A4B93F /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED2F3401C1DFB0C00A4B93F /* SettingsViewController.swift */; };
 		CEFBBA671C1B45C30027A6A2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFBBA661C1B45C30027A6A2 /* AppDelegate.swift */; };
 		CEFBBA691C1B45C30027A6A2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFBBA681C1B45C30027A6A2 /* ViewController.swift */; };
 		CEFBBA6C1C1B45C30027A6A2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEFBBA6A1C1B45C30027A6A2 /* Main.storyboard */; };
@@ -34,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CED2F3401C1DFB0C00A4B93F /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		CEFBBA631C1B45C30027A6A2 /* tips.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tips.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEFBBA661C1B45C30027A6A2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CEFBBA681C1B45C30027A6A2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -100,6 +102,7 @@
 				CEFBBA661C1B45C30027A6A2 /* AppDelegate.swift */,
 				CEFBBA681C1B45C30027A6A2 /* ViewController.swift */,
 				CEFBBA6A1C1B45C30027A6A2 /* Main.storyboard */,
+				CED2F3401C1DFB0C00A4B93F /* SettingsViewController.swift */,
 				CEFBBA6D1C1B45C30027A6A2 /* Assets.xcassets */,
 				CEFBBA6F1C1B45C30027A6A2 /* LaunchScreen.storyboard */,
 				CEFBBA721C1B45C30027A6A2 /* Info.plist */,
@@ -258,6 +261,7 @@
 			files = (
 				CEFBBA691C1B45C30027A6A2 /* ViewController.swift in Sources */,
 				CEFBBA671C1B45C30027A6A2 /* AppDelegate.swift in Sources */,
+				CED2F3411C1DFB0C00A4B93F /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -401,6 +405,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Zeus.tips;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -412,6 +417,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Zeus.tips;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -482,6 +488,7 @@
 				CEFBBA8D1C1B45C30027A6A2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CEFBBA8E1C1B45C30027A6A2 /* Build configuration list for PBXNativeTarget "tipsTests" */ = {
 			isa = XCConfigurationList;
@@ -490,6 +497,7 @@
 				CEFBBA901C1B45C30027A6A2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CEFBBA911C1B45C30027A6A2 /* Build configuration list for PBXNativeTarget "tipsUITests" */ = {
 			isa = XCConfigurationList;
@@ -498,6 +506,7 @@
 				CEFBBA931C1B45C30027A6A2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
