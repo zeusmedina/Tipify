@@ -1,0 +1,2 @@
+# Tipify
+Basic tip calculator
