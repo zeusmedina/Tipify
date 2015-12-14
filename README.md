@@ -34,6 +34,7 @@ GIF created with [LiceCap](http://www.cockos.com/licecap/).
 ## Notes
 
 I had a hard time gettings methods/data from the Settings view over to the Main View. Solved using OOP.
+Being unfamilar with GIT, pushing my work to Github was not as effiecient as it should have been. I will learn GIT more in depth in the coming days/weeks.
 
 ## License
 
