@@ -23,12 +23,19 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "Tipify"
+       
         
         tipLabel.text = "0.00"
         totalLabel.text = "0.00"
 
         //Keyboard opens on app launch
         billField.becomeFirstResponder()
+        
+        if let previousBillAmount = mySettings.getPreviousBillAmount() {
+            billField.text = previousBillAmount
+        }
+        
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -48,10 +55,12 @@ class ViewController: UIViewController {
         
         
         var tipPercent = [0.15, 0.2, 0.25]
-        var selectedPercent = tipPercent[tipControl.selectedSegmentIndex]
+        let selectedPercent = tipPercent[tipControl.selectedSegmentIndex]
         let billAmount = NSString(string: billField.text!).doubleValue
+        mySettings.setPreviousBillAmount(NSString(string: billField.text!) as String)
         let tip = billAmount * selectedPercent
         let total = billAmount + tip
+        
         
         tipLabel.text = String(format: "$%.2f", tip)
         totalLabel.text = String(format: "$%.2f", total)

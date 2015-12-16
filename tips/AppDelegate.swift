@@ -12,10 +12,30 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    
+    func UIColorFromHex(rgbValue:UInt32, alpha:Double=1.0)->UIColor {
+        let red = CGFloat((rgbValue & 0xFF0000) >> 16)/256.0
+        let green = CGFloat((rgbValue & 0xFF00) >> 8)/256.0
+        let blue = CGFloat(rgbValue & 0xFF)/256.0
+        
+        return UIColor(red:red, green:green, blue:blue, alpha:CGFloat(alpha))
+    }
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        
+        //Controls color of app (Design)
+        var navigationBarAppearace = UINavigationBar.appearance()
+        
+        //change button colors
+        navigationBarAppearace.tintColor = UIColorFromHex(0xecf0f1)
+        //change actual bar background color
+        navigationBarAppearace.barTintColor = UIColorFromHex(0x27ae60)
+        
+        //Change the Nav Title
+        navigationBarAppearace.titleTextAttributes = [NSForegroundColorAttributeName:UIColorFromHex(0xecf0f1)]
+        
         return true
     }
 
