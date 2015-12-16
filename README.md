@@ -4,7 +4,7 @@ Tipify is a tip calculator application for iOS.
 
 Submitted by: Zeus Medina
 
-Time spent: 5 hours spent in total
+Time spent: 9 hours spent in total
 
 ## User Stories
 
