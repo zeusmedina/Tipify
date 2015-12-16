@@ -15,6 +15,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var totalLabel: UILabel!
     @IBOutlet weak var tipControl: UISegmentedControl!
     
+    @IBOutlet weak var personsLabel: UILabel!
+    @IBOutlet weak var numberOfPeople: UISlider!
     //Instance of SettingsViewController class used to call methods
     var mySettings = SettingsViewController()
     
@@ -24,6 +26,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         self.title = "Tipify"
        
+        numberOfPeople.value = 1
         
         tipLabel.text = "0.00"
         totalLabel.text = "0.00"
@@ -59,7 +62,8 @@ class ViewController: UIViewController {
         let billAmount = NSString(string: billField.text!).doubleValue
         mySettings.setPreviousBillAmount(NSString(string: billField.text!) as String)
         let tip = billAmount * selectedPercent
-        let total = billAmount + tip
+        print("test")
+        let total = (billAmount + tip)/(Double(numberOfPeople.value))
         
         
         tipLabel.text = String(format: "$%.2f", tip)
@@ -72,5 +76,22 @@ class ViewController: UIViewController {
         view.endEditing(true)
     }
 
+    @IBAction func numberOfPeopleChanged(sender: AnyObject) {
+        let persons = Double(numberOfPeople.value)
+        personsLabel.text = "Persons: \(persons)"
+        
+        var tipPercent = [0.15, 0.2, 0.25]
+        let selectedPercent = tipPercent[tipControl.selectedSegmentIndex]
+        let billAmount = NSString(string: billField.text!).doubleValue
+        mySettings.setPreviousBillAmount(NSString(string: billField.text!) as String)
+        let tip = billAmount * selectedPercent
+        print("test")
+        let total = (billAmount + tip)/(Double(numberOfPeople.value))
+        
+        
+        tipLabel.text = String(format: "$%.2f", tip)
+        totalLabel.text = String(format: "$%.2f", total)
+
+    }
 }
 

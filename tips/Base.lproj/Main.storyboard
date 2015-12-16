@@ -71,6 +71,21 @@
                                     <action selector="onEditingChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="Zha-nA-6IQ"/>
                                 </connections>
                             </segmentedControl>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Persons: 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="I6b-5x-xjG">
+                                <rect key="frame" x="186" y="20" width="92" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="14"/>
+                                <color key="textColor" red="0.92549019610000005" green="0.94117647059999998" blue="0.94509803920000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="1" maxValue="10" id="U4L-5i-uze">
+                                <rect key="frame" x="184" y="55" width="118" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="numberOfPeopleChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="gkD-Ru-7lB"/>
+                                </connections>
+                            </slider>
                         </subviews>
                         <color key="backgroundColor" red="0.1803921568627451" green="0.80000000000000004" blue="0.44313725490196076" alpha="1" colorSpace="calibratedRGB"/>
                         <gestureRecognizers/>
@@ -87,6 +102,8 @@
                     </navigationItem>
                     <connections>
                         <outlet property="billField" destination="eJa-CS-xic" id="QvV-KJ-N3V"/>
+                        <outlet property="numberOfPeople" destination="U4L-5i-uze" id="63Y-UL-HX8"/>
+                        <outlet property="personsLabel" destination="I6b-5x-xjG" id="zuw-I6-urH"/>
                         <outlet property="tipControl" destination="qa9-Vf-HLg" id="ZV5-eH-GYn"/>
                         <outlet property="tipLabel" destination="pEN-xt-qXB" id="5pl-3L-Ody"/>
                         <outlet property="totalLabel" destination="Tkg-QB-aiE" id="1sD-QE-Mwz"/>
