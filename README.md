@@ -27,7 +27,7 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-<img src='hhttps://i.imgur.com/psL3OVb.giff' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='https://i.imgur.com/psL3OVb.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
@@ -38,7 +38,7 @@ Being unfamilar with GIT, pushing my work to Github was not as effiecient as it 
 
 ## License
 
-    Copyright [yyyy] [name of copyright owner]
+    Copyright [2015] [Zeus Medina]
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
